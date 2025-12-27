@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rachel Rossin — Presentation</title>
+    <meta name="description" content="New work, works in progress, and selected previous works." />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <div class="title">Rachel Rossin</div>
+        <div class="subtitle">Presentation</div>
+      </div>
+      <nav class="nav" aria-label="Presentation navigation">
+        <a href="#new" class="navLink">New / In Progress</a>
+        <a href="#previous" class="navLink">Previous Work</a>
+        <a href="#cv" class="navLink">CV</a>
+      </nav>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <h1>New Work and In Progress</h1>
+        <p class="lead">
+          A focused, text-forward presentation page with optional media embeds. Media files are referenced via
+          relative URLs (GitHub-friendly); see <code>archive_agent/public/assets/presentation/README.md</code>.
+        </p>
+      </section>
+
+      <section id="new" class="section">
+        <article class="card">
+          <header class="cardHeader">
+            <h2>Sentinels with Dubstep (Skrillex)</h2>
+          </header>
+          <div class="prose">
+            <p>
+              By training canaries on dubstep-like patterns, the project uses songbirds as sentinels to expose the same
+              game-like reinforcement dynamics that structure video games and digital media.
+            </p>
+            <h3>Related links</h3>
+            <ul>
+              <li>
+                <a href="https://www.smithsonianmag.com/smart-news/playing-skrillex-may-help-ward-mosquito-bites-180971849/" target="_blank" rel="noopener">
+                  Playing Skrillex May Help Ward Off Mosquito Bites (Smithsonian Magazine)
+                </a>
+              </li>
+              <li>
+                <a href="https://en.wikipedia.org/wiki/Sentinel_species" target="_blank" rel="noopener">Sentinel species (Wikipedia)</a>
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="cardHeader">
+            <h2>Doxologies</h2>
+          </header>
+
+          <div class="prose">
+            <p>
+              This work extends the investigation of gamified learning by constructing a full video game controlled not by hands,
+              but by brain activity. Using a noninvasive brain–computer interface, neural signals such as attention, relaxation,
+              or oscillatory patterns are translated into in-game movement and decision-making. The player does not issue commands
+              directly; instead, the system responds to measurable states of the nervous system.
+            </p>
+            <p>
+              By shifting control from intentional action to neural modulation, the game exposes how feedback loops operate below
+              conscious choice. The player learns not through strategy alone, but through regulating internal states in response to
+              variable reinforcement. Success emerges from synchronization rather than mastery.
+            </p>
+            <p>
+              Positioned alongside earlier work with songbirds trained on bursty sound structures, the game frames the human nervous
+              system as another learning system embedded in a gamified environment. Where birds adapt to acoustic patterns, the player
+              adapts to a system that rewards specific neural dynamics. In both cases, behavior is shaped by timing, uncertainty, and
+              feedback rather than content or narrative.
+            </p>
+            <p>
+              The work asks what it means to play a game when the interface is the nervous system itself — and what kinds of selves are
+              produced when attention, arousal, and focus become inputs to optimized systems.
+            </p>
+          </div>
+
+          <div class="mediaRow">
+            <figure class="media">
+              <video controls playsinline preload="metadata" data-label="Doxologies clip">
+                <source src="../assets/presentation/doxologies-clip.mp4" type="video/mp4" />
+              </video>
+              <figcaption>
+                Clip (<code>doxologies-clip.mp4</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/doxologies-clip.mp4" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="prose">
+            <h3>Presentation format options</h3>
+          </div>
+          <div class="twoCol">
+            <div class="miniCard">
+              <div class="miniTitle">Sentinel Mode (Parallel Display)</div>
+              <ul>
+                <li>Game runs continuously, even without a player</li>
+                <li>Periodically activated by participants’ brain input</li>
+                <li>System retains memory of past neural patterns</li>
+              </ul>
+              <div class="miniTitle" style="margin-top: 10px;">Effect</div>
+              <ul>
+                <li>The game itself becomes a sensor</li>
+                <li>Accumulated neural data alters difficulty, pacing, or environment</li>
+                <li>Reinforces the idea of the system adapting to its users over time</li>
+              </ul>
+            </div>
+            <div class="miniCard">
+              <div class="miniTitle">Timed Performance (Scheduled)</div>
+              <ul>
+                <li>Fixed-length sessions (10–20 minutes)</li>
+                <li>One participant at a time</li>
+                <li>Audience present</li>
+              </ul>
+              <div class="miniTitle" style="margin-top: 10px;">Performance frame</div>
+              <ul>
+                <li>The player becomes a performer</li>
+                <li>Neural signals drive character motion, environment shifts, or score</li>
+                <li>The audience witnesses moments where intention fails or drifts</li>
+              </ul>
+              <div class="miniTitle" style="margin-top: 10px;">Effect</div>
+              <ul>
+                <li>Highlights the gap between conscious will and neural activity</li>
+                <li>Emphasizes vulnerability and loss of control</li>
+                <li>Frames gameplay as embodied performance rather than play</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="previous" class="section">
+        <h1 style="margin-top: 34px;">Previous Work</h1>
+
+        <article class="card">
+          <header class="cardHeader">
+            <h2>Skinsuits</h2>
+          </header>
+          <div class="prose">
+            <p>
+              This project is an infinite game environment built around rapid avatar transformation. The player — or an audience member
+              whose body is mapped in real time — moves through thousands of playable identities drawn from across video game and media
+              universes, from Mario and Zelda to Silent Hill and Grand Theft Auto. Avatars are procedurally generated and endlessly
+              recombined, allowing the system to run indefinitely.
+            </p>
+            <p>
+              Using motion capture and computer vision, the work can operate either through a virtual character or by projecting avatars
+              directly onto a participant’s body at full scale. As gestures are mapped onto constantly shifting forms, the participant’s
+              posture, movement, and behavior subtly change in response to each identity.
+            </p>
+            <p>
+              The project engages the Proteus effect — the phenomenon in which a person’s behavior and self-perception shift to align with
+              the characteristics of their avatar. By accelerating and destabilizing avatar identity, the work reveals how quickly
+              embodiment, confidence, aggression, vulnerability, or restraint can be altered by representation alone.
+            </p>
+            <p>
+              Rather than asking who a player chooses to be, the work asks what happens when identity is continuously reassigned — when the
+              body becomes a surface for endless projection, and the self adapts in real time to the logic of game systems.
+            </p>
+            <h3>Related link</h3>
+            <ul>
+              <li><a href="https://en.wikipedia.org/wiki/Proteus_effect" target="_blank" rel="noopener">Proteus effect (Wikipedia)</a></li>
+            </ul>
+          </div>
+
+          <div class="mediaGrid">
+            <figure class="media">
+              <img src="../assets/presentation/skinsuits-installation.png" alt="Skinsuits installation view" loading="lazy" />
+              <figcaption>
+                Installation view (<code>skinsuits-installation.png</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/skinsuits-installation.png" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="media">
+              <video controls playsinline preload="metadata" data-label="Skinsuits trailer">
+                <source src="../assets/presentation/skinsuits-trailer.mp4" type="video/mp4" />
+              </video>
+              <figcaption>
+                Trailer (<code>skinsuits-trailer.mp4</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/skinsuits-trailer.mp4" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="media">
+              <img src="../assets/presentation/skinsuits.gif" alt="Skinsuits animated clip" loading="lazy" />
+              <figcaption>
+                Page GIF (<code>skinsuits.gif</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/skinsuits.gif" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="media">
+              <video controls playsinline preload="metadata" data-label="Skinsuits with canary">
+                <source src="../assets/presentation/skinsuits-canary.mp4" type="video/mp4" />
+              </video>
+              <figcaption>
+                With canary (<code>skinsuits-canary.mp4</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/skinsuits-canary.mp4" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </article>
+
+        <article class="card">
+          <header class="cardHeader">
+            <h2>sky is a gap</h2>
+          </header>
+
+          <div class="mediaRow">
+            <figure class="media">
+              <video controls playsinline preload="metadata" data-label="sky is a gap trailer opening">
+                <source src="../assets/presentation/sky-is-a-gap-trailer.mp4" type="video/mp4" />
+              </video>
+              <figcaption>
+                Trailer opening (<code>sky-is-a-gap-trailer.mp4</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/sky-is-a-gap-trailer.mp4" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="prose">
+            <h3>Installation shots</h3>
+          </div>
+          <div class="mediaGrid">
+            <figure class="media">
+              <img src="../assets/presentation/sky-is-a-gap-install-1.jpg" alt="Installation shot 1" loading="lazy" />
+              <figcaption>
+                Installation shot 1 (<code>sky-is-a-gap-install-1.jpg</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/sky-is-a-gap-install-1.jpg" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="media">
+              <img src="../assets/presentation/sky-is-a-gap-install-2.jpg" alt="Installation shot 2" loading="lazy" />
+              <figcaption>
+                Installation shot 2 (<code>sky-is-a-gap-install-2.jpg</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/sky-is-a-gap-install-2.jpg" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="media">
+              <img src="../assets/presentation/sky-is-a-gap-install-3.jpg" alt="Installation shot 3" loading="lazy" />
+              <figcaption>
+                Installation shot 3 (<code>sky-is-a-gap-install-3.jpg</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/sky-is-a-gap-install-3.jpg" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="prose">
+            <h3>Show catalog</h3>
+            <ul>
+              <li>
+                <a href="../assets/presentation/rossin-publication.pdf" target="_blank" rel="noopener">
+                  PDF (<code>rossin-publication.pdf</code>) — direct link
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mediaRow">
+            <figure class="media">
+              <img src="../assets/presentation/rossin-publication-10.jpg" alt="Show catalog page image" loading="lazy" />
+              <figcaption>
+                Catalog page image (<code>rossin-publication-10.jpg</code>)
+                <div class="directLink">
+                  <a href="../assets/presentation/rossin-publication-10.jpg" target="_blank" rel="noopener">Direct link</a>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="prose">
+            <h3>Displays</h3>
+            <ol>
+              <li>
+                <strong>Scry Glass Portals</strong>
+                <div class="muted">
+                  “Black mirrors” pointing to history of human beings using black mirrors dating to 5000 B.C. in ancient Babylon.
+                </div>
+              </li>
+              <li style="margin-top: 10px;">
+                <strong>LED screens in inventory</strong>
+                <div class="muted">All sizes — 6’ to 1’.</div>
+              </li>
+            </ol>
+          </div>
+        </article>
+      </section>
+
+      <section id="cv" class="section">
+        <div class="card">
+          <h2>CV</h2>
+          <p class="muted">
+            When you run <code>python3 archive_agent/tools/build_public_site.py</code>, the build will copy your CV PDF (from
+            <code>sources/</code>) into <code>archive_agent/public/assets/cv/RachelRossin_CV.pdf</code>.
+          </p>
+          <p>
+            <a class="button" href="../assets/cv/RachelRossin_CV.pdf" target="_blank" rel="noopener">Open CV (PDF)</a>
+            <span class="muted" style="margin-left: 10px;">
+              <a href="../assets/cv/RachelRossin_CV.pdf" target="_blank" rel="noopener">Direct link</a>
+            </span>
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="muted">This page is intentionally minimal and GitHub-friendly (no absolute paths).</div>
+      </footer>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,156 @@
+:root {
+  --bg: #f8f7f4;
+  --panel: #ffffff;
+  --text: #1f2329;
+  --muted: #6f7680;
+  --border: #e4e4e0;
+  --accent: #1a4bff;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+a { color: var(--text); text-decoration: none; }
+a:hover { text-decoration: underline; }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95em;
+}
+
+.top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: rgba(248, 247, 244, 0.92);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+.brand { min-width: 220px; }
+.title { font-size: 18px; font-weight: 650; letter-spacing: 0.2px; }
+.subtitle { font-size: 13px; color: var(--muted); margin-top: 4px; }
+.nav { display: flex; flex-wrap: wrap; gap: 12px; justify-content: flex-end; }
+.navLink {
+  font-size: 12px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+.navLink:hover { color: var(--text); text-decoration: none; background: rgba(0,0,0,0.04); }
+.navSecondary { border: 1px solid var(--border); background: #fff; }
+
+.wrap { max-width: 980px; margin: 0 auto; padding: 22px 20px 70px; }
+.hero { padding: 10px 0 14px; }
+h1 { font-size: 28px; margin: 0; letter-spacing: -0.01em; }
+.lead { margin: 10px 0 0; color: var(--muted); line-height: 1.6; max-width: 72ch; }
+
+.section { margin-top: 18px; }
+.card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--panel);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.03);
+  padding: 18px;
+  margin-top: 16px;
+}
+.cardHeader { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.card h2 { margin: 0; font-size: 18px; font-weight: 650; }
+.card h3 { margin: 16px 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
+.prose { font-size: 14px; line-height: 1.65; max-width: 78ch; }
+.prose p { margin: 10px 0; }
+.prose ul, .prose ol { margin: 10px 0 10px 18px; }
+.prose li { margin: 6px 0; }
+.muted { color: var(--muted); }
+
+.twoCol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+.miniCard {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+}
+.miniTitle {
+  font-weight: 650;
+  font-size: 13px;
+}
+.miniCard ul { margin: 8px 0 0 18px; padding: 0; font-size: 13px; line-height: 1.55; color: var(--text); }
+.miniCard li { margin: 6px 0; }
+
+.mediaRow { margin-top: 12px; }
+.mediaGrid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.media {
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+.media img, .media video {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  background: #f2f2ef;
+}
+.media figcaption {
+  border-top: 1px solid var(--border);
+  padding: 10px 12px;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.45;
+}
+.directLink { margin-top: 6px; }
+.directLink a { color: var(--accent); }
+.media.missing img,
+.media.missing video { display: none; }
+.missingNote {
+  padding: 18px 14px;
+  background: linear-gradient(135deg, #f2f2ef, #fbfbf8);
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.button:hover { text-decoration: none; border-color: rgba(0,0,0,0.18); }
+
+.footer { margin-top: 26px; }
+
+@media (max-width: 860px) {
+  .top { flex-wrap: wrap; }
+  .brand { min-width: 0; }
+  .nav { justify-content: flex-start; }
+  .twoCol { grid-template-columns: 1fr; }
+  .mediaGrid { grid-template-columns: 1fr; }
+}
+
+
