@@ -14,6 +14,7 @@ body {
   font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
+  font-size: 16px;
 }
 a { color: var(--text); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -28,6 +29,7 @@ code {
   justify-content: space-between;
   gap: 16px;
   padding: 18px 24px;
+  padding-top: calc(18px + env(safe-area-inset-top));
   border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
@@ -50,12 +52,18 @@ code {
 .navLink:hover { color: var(--text); text-decoration: none; background: rgba(0,0,0,0.04); }
 .navSecondary { border: 1px solid var(--border); background: #fff; }
 
-.wrap { max-width: 980px; margin: 0 auto; padding: 22px 20px 70px; }
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 22px 20px 70px;
+  padding-left: max(20px, env(safe-area-inset-left));
+  padding-right: max(20px, env(safe-area-inset-right));
+}
 .hero { padding: 10px 0 14px; }
-h1 { font-size: 28px; margin: 0; letter-spacing: -0.01em; }
+h1 { font-size: clamp(24px, 3.2vw, 32px); margin: 0; letter-spacing: -0.01em; }
 .lead { margin: 10px 0 0; color: var(--muted); line-height: 1.6; max-width: 72ch; }
 
-.section { margin-top: 18px; }
+.section { margin-top: 18px; scroll-margin-top: 96px; }
 .card {
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -65,7 +73,7 @@ h1 { font-size: 28px; margin: 0; letter-spacing: -0.01em; }
   margin-top: 16px;
 }
 .cardHeader { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
-.card h2 { margin: 0; font-size: 18px; font-weight: 650; }
+.card h2 { margin: 0; font-size: 18px; font-weight: 650; line-height: 1.25; }
 .card h3 { margin: 16px 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); }
 .prose { font-size: 14px; line-height: 1.65; max-width: 78ch; }
 .prose p { margin: 10px 0; }
@@ -109,7 +117,7 @@ h1 { font-size: 28px; margin: 0; letter-spacing: -0.01em; }
 .media img, .media video {
   display: block;
   width: 100%;
-  max-height: 420px;
+  max-height: min(520px, 70vh);
   object-fit: contain;
   background: #f2f2ef;
 }
@@ -151,6 +159,14 @@ h1 { font-size: 28px; margin: 0; letter-spacing: -0.01em; }
   .nav { justify-content: flex-start; }
   .twoCol { grid-template-columns: 1fr; }
   .mediaGrid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .top { padding: 14px 16px; padding-top: calc(14px + env(safe-area-inset-top)); }
+  .nav { gap: 8px; }
+  .navLink { padding: 6px 7px; }
+  .wrap { padding-top: 18px; padding-bottom: 54px; }
+  .card { padding: 16px; }
 }
 
 

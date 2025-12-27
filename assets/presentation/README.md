@@ -11,7 +11,7 @@ It expects media at these relative URLs (you can rename, but then update the HTM
 - `archive_agent/public/assets/presentation/doxologies-clip.mp4`
 
 ## Skinsuits
-- `archive_agent/public/assets/presentation/skinsuits-installation.png`
+- `archive_agent/public/assets/presentation/skinsuits-installation.jpg`
 - `archive_agent/public/assets/presentation/skinsuits-trailer.mp4`
 - `archive_agent/public/assets/presentation/skinsuits.gif`
 - `archive_agent/public/assets/presentation/skinsuits-canary.mp4`
