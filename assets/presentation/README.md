@@ -7,8 +7,14 @@ The presentation page lives at:
 
 It expects media at these relative URLs (you can rename, but then update the HTML):
 
+## Sentinels with Dubstep (Skrillex)
+- `archive_agent/public/assets/presentation/sentinels.gif`
+- `archive_agent/public/assets/presentation/sentinels-training.mp4` (site uses a compressed 60s excerpt for GitHub-friendliness)
+
 ## Doxologies
 - `archive_agent/public/assets/presentation/doxologies-clip.mp4`
+- `archive_agent/public/assets/presentation/doxologies-brain.gif`
+- `archive_agent/public/assets/presentation/doxologies-brain-video.mp4`
 
 ## Skinsuits
 - `archive_agent/public/assets/presentation/skinsuits-installation.jpg`
